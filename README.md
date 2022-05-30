@@ -78,7 +78,7 @@ test
 -DbrowserVersion=${BROWSER_VERSION}
 -DbrowserSize=${BROWSER_SIZE}
 -DbrowserMobileView="${BROWSER_MOBILE}"
--DremoteDriverUrl=https://login:password@${REMOTE_URL}/wd/hub/
+-DremoteDriverUrl=https://${LOGIN_REMOTE}:${PASSWORD_REMOTE}@${REMOTE_URL}/wd/hub/
 -DvideoStorage=https://${REMOTE_URL}/video/
 -Dthreads=${THREADS}
 ```
@@ -94,6 +94,10 @@ test
 > <code>BROWSER_MOBILE</code> – мобильный браузер, в котором будут выполняться тесты.
 >
 > <code>REMOTE_URL</code> – удаленный браузер, в котором будут выполняться тесты.
+> 
+> <code>LOGIN_REMOTE</code> – логин для подключения к selenoid.
+> 
+> <code>PASSWORD_REMOTE</code> – пароль для подключения к selenoid.
 > 
 > <code>THREADS</code> – количество потоков.
 ## <img width="4%" title="Jenkins" src="images/logo/Jenkins.svg"> Главная страница сборки [Jenkins](https://jenkins.autotests.cloud/job/12-Antipant-HW14/)
